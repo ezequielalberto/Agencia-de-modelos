@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Fox</title>
+    <link rel="stylesheet" href="todos.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="projectos.css">
+    <link rel="stylesheet" href="sobre.css">
+    <link rel="stylesheet" href="contato.css">
+    <script defer src="todos.js"></script>
+    <script defer src="home.js"></script>
+    <script defer src="sobre.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!--nav-->
+        <nav class="containerNav">
+            <div class="logo">
+                <h1>Model<span>Fox</span></h1>
+            </div>
+
+            <div class="mobileMenu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="buttons">
+                <button class="BtnNav active" content-id="inicio">
+                    Início
+                </button>
+                <button class="BtnNav" content-id="projectos">
+                    Projectos
+                </button>
+                <button class="BtnNav" content-id="sobreNos">
+                    Sobre Nós
+                </button>
+                <button class="BtnNav" content-id="contato">
+                    Contato
+                </button>
+            </div>
+
+        </nav>
+        
+        <!--conteudos-->
+        <div class="containerContents">
+
+
+
+
+            <!--content-inicio-->
+            <div class="content" id="inicio">
+                <!--header-->
+                <header class="header">
+                    <div class="redesSocias">
+                        <a href="#">
+                            <img src="facebook.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="instagram.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="linkedin.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="pinterest.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="headerContent">
+                        <h1>Descubra o seu potencial</h1>
+                        <p>Descubra o seu verdadeiro potencial com a ModelFox, liberte o uao que a em ti.</p>
+                    </div>
+                    
+                    <!--ANÚNCIO-->
+                    <div class="containerAnuncio">
+                        <div class="shadowEvent"></div>
+                        <div class="contentAnuncio">
+                            <h1>Grande evento</h1>
+                            <h4>Desfile das estrelas</h4>
+                            <ul>
+                                <li>Neste Sabado ás 18h</li>
+                                <li>Luanda, Cidadela</li>
+                                <li>Saiba, clicando em aderir</li>
+                            </ul>
+                            <button><a href="https://wa.me/244945190462">Aderir</a></button>
+                            <button class="eventClose" onclick="fecharEvento()">Close</button>
+                        </div>
+                    </div>
+                </header>
+
+                <!--section scroll photos-->
+                <section class="sectionSlidePhotos">
+                    <h1>Modelos</h1>
+                    <div class="containerSlidePhotos">
+
+                        <div class="contentSlidePhotos">
+                            <div class="slidePhoto"></div>
+                            <div class="slidePhoto"></div>
+                            <div class="slidePhoto"></div>
+                            <div class="slidePhoto"></div>
+                            <div class="slidePhoto"></div>
+                            <div class="slidePhoto"></div>
+                            <div class="slidePhoto"></div>
+                            <div class="slidePhoto"></div>
+                            <div class="slidePhoto"></div>
+
+                            <div class="slidePhoto"></div>
+                            <div class="slidePhoto"></div>
+                            <div class="slidePhoto"></div>
+                            <div class="slidePhoto"></div>
+                            <div class="slidePhoto"></div>
+                            <div class="slidePhoto"></div>
+                            <div class="slidePhoto"></div>
+                            <div class="slidePhoto"></div>
+                            <div class="slidePhoto"></div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!--section stap by stap-->
+                <section class="stapByStap">
+                    <div class="stap1">
+                        <h1>1</h1>
+                        <p>Liberte o Uao que a em ti.</p>
+                    </div>
+                    <div class="stap2">
+                        <h1>2</h1>
+                        <p>Recrie-se durante a sua jornada!</p>
+                    </div>
+                    <div class="stap3">
+                        <h1>3</h1>
+                        <p>Em busca de ainda mais</p>
+                    </div>
+                </section>
+
+                <!--section levels-->
+                <section class="levels">
+                    <div class="level1">
+                        <div class="levelBlur">
+                            <div class="levelShadow">
+                                <h1>Nível 1</h1>
+                                <p>Liberte o Uao que a em ti.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="level2">
+                        <div class="levelBlur">
+                            <div class="levelShadow">
+                                <h1>Nível 2</h1>
+                                <p>Recrie-se durante a sua jornada!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="level3">
+                        <div class="levelBlur">
+                            <div class="levelShadow">
+                                <h1>Nível 3</h1>
+                                <p>Em busca de ainda mais</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!--section argument-->
+                <section class="containerArgument">
+                    <div class="scrollArgument">
+                        <!--CARD ARGUMENT-->
+                        <div class="CardArgument">
+                            <div class="containerPerfil">
+                                <span class="containerFotoArgument"><div></div></span>
+                                <span class="containerNameArgument">
+                                    <h3 class="contentNameArgument">Isabela Santos</h3>
+                                    <p class="contentProfissaoArgument">Modelo de alta constura</p>
+                                </span>
+                            </div>
+                            <div class="contentArgument">
+                                <p>"A agencia ModelFox me proporcionou a experiencia de desfilar para os maiores estilistas do país. A equipe da agencia é extremamente profissional e sempre me deixa pronta para os desafios das passarelas"</p>
+                            </div>
+                        </div>
+                        <!--CARD ARGUMENT-->
+                        <div class="CardArgument">
+                            <div class="containerPerfil">
+                                <span class="containerFotoArgument"><div></div></span>
+                                <span class="containerNameArgument">
+                                    <h3 class="contentNameArgument">Gabriela Lima</h3>
+                                    <p class="contentProfissaoArgument">Modelo Publicitária</p>
+                                </span>
+                            </div>
+                            <div class="contentArgument">
+                                <p>"A ModelFox me abriu portas para o mundo da publicidade. Graças á equipe profissional e aos contatos da agencia, consegui participar de campanhas para grandes marcas e desenvolver uma carreira sólida"</p>
+                            </div>
+                        </div>
+                        <!--CARD ARGUMENT-->
+                        <div class="CardArgument">
+                            <div class="containerPerfil">
+                                <span class="containerFotoArgument"><div></div></span>
+                                <span class="containerNameArgument">
+                                    <h3 class="contentNameArgument">Mariana Henrique</h3>
+                                    <p class="contentProfissaoArgument">Modelo Fitness</p>
+                                </span>
+                            </div>
+                            <div class="contentArgument">
+                                <p>"ModelFox transformou a minha paixão por fitness em uma carreira de sucesso. Os profissionais da agencia são incriveis e sempre me incentivaram a dar o meu melhor em cada trabalho. Muito Obrigado!"</p>
+                            </div>
+                        </div>
+                        <!--CARD ARGUMENT-->
+                        <div class="CardArgument">
+                            <div class="containerPerfil">
+                                <span class="containerFotoArgument"><div></div></span>
+                                <span class="containerNameArgument">
+                                    <h3 class="contentNameArgument">Silvio Silva</h3>
+                                    <p class="contentProfissaoArgument">Modelo Publicitario</p>
+                                </span>
+                            </div>
+                            <div class="contentArgument">
+                                <p>"A equipe me proporcionou oportunidade de trabalhar com grandes fotografos e diretores de criação. Atraves dos trabalhos que realizei, pude aprimorar minhas habilidades como modelo e construir uma carreira duradoura."</p>
+                            </div>
+                        </div>
+
+
+                        <!--CARD ARGUMENT-->
+                        <div class="CardArgument">
+                            <div class="containerPerfil">
+                                <span class="containerFotoArgument"><div></div></span>
+                                <span class="containerNameArgument">
+                                    <h3 class="contentNameArgument">Isabela Santos</h3>
+                                    <p class="contentProfissaoArgument">Modelo de alta constura</p>
+                                </span>
+                            </div>
+                            <div class="contentArgument">
+                                <p>"A agencia ModelFox me proporcionou a experiencia de desfilar para os maiores estilistas do país. A equipe da agencia é extremamente profissional e sempre me deixa pronta para os desafios das passarelas"</p>
+                            </div>
+                        </div>
+                        <!--CARD ARGUMENT-->
+                        <div class="CardArgument">
+                            <div class="containerPerfil">
+                                <span class="containerFotoArgument"><div></div></span>
+                                <span class="containerNameArgument">
+                                    <h3 class="contentNameArgument">Gabriela Lima</h3>
+                                    <p class="contentProfissaoArgument">Modelo Publicitária</p>
+                                </span>
+                            </div>
+                            <div class="contentArgument">
+                                <p>"A ModelFox me abriu portas para o mundo da publicidade. Graças á equipe profissional e aos contatos da agencia, consegui participar de campanhas para grandes marcas e desenvolver uma carreira sólida"</p>
+                            </div>
+                        </div>
+                        <!--CARD ARGUMENT-->
+                        <div class="CardArgument">
+                            <div class="containerPerfil">
+                                <span class="containerFotoArgument"><div></div></span>
+                                <span class="containerNameArgument">
+                                    <h3 class="contentNameArgument">Mariana Henrique</h3>
+                                    <p class="contentProfissaoArgument">Modelo Fitness</p>
+                                </span>
+                            </div>
+                            <div class="contentArgument">
+                                <p>"ModelFox transformou a minha paixão por fitness em uma carreira de sucesso. Os profissionais da agencia são incriveis e sempre me incentivaram a dar o meu melhor em cada trabalho. Muito Obrigado!"</p>
+                            </div>
+                        </div>
+                        <!--CARD ARGUMENT-->
+                        <div class="CardArgument">
+                            <div class="containerPerfil">
+                                <span class="containerFotoArgument"><div></div></span>
+                                <span class="containerNameArgument">
+                                    <h3 class="contentNameArgument">Silvio Silva</h3>
+                                    <p class="contentProfissaoArgument">Modelo Publicitaria</p>
+                                </span>
+                            </div>
+                            <div class="contentArgument">
+                                <p>"A equipe me proporcionou oportunidade de trabalhar com grandes fotografos e diretores de criação. Atraves dos trabalhos que realizei, pude aprimorar minhas habilidades como modelo e construir uma carreira duradoura."</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </section>
+            </div>
+
+
+
+
+
+
+
+            <!--content-projectos-->
+            <div class="content" id="projectos">
+                <div class="projectosNiveis">
+
+                    <div class="projectoNivel">
+                        <div class="projectoHeader projectoNivel1Header">
+                            <h2>Projecto Primavera</h2>
+                            <span>
+                                <h3>Nível 1</h3>
+                                <p> - Liberte o uao que a em ti</p>
+                            </span>
+                            
+                        </div>
+                        <div class="projectoBody projectoNivel1Body">
+                            <div><h1>Ideal Para iniciantes</h1></div>
+                            <div><h1>Plano Acessivel</h1></div>
+                            <div><h1>+20 Projectos</h1></div>
+                            <div><h1>Ideal Para iniciantes</h1></div>
+                            <div><h1>Plano Acessivel</h1></div>
+                            <div><h1>+20 Projectos</h1></div>
+                        </div>
+                        <span class="ProjectoNivelCadastro">
+                            <p>Ganhas até <strong>300 mil Kz</strong></p>
+                            <button class="Btncadastrar">Cadastrar-me</button>
+                        </span>
+                    </div>
+
+
+                    <div class="projectoNivel">
+                        <div class="projectoHeader projectoNivel2Header">
+                            <h2>Projecto Outono</h2>
+                            <span>
+                                <h3>Nível 2</h3>
+                                <p> - Recrie-se durante a jornada</p>
+                            </span>
+                        </div>
+                        <div class="projectoBody projectoNivel2Body">
+                            <div><h1>Ideal Para Experientes</h1></div>
+                            <div><h1>Plano Imrecusavel</h1></div>
+                            <div><h1>+50 Projectos</h1></div>
+                            <div><h1>Ideal Para Experientes</h1></div>
+                            <div><h1>Plano Imrecusavel</h1></div>
+                            <div><h1>+50 Projectos</h1></div>
+                        </div>
+                        <span class="ProjectoNivelCadastro">
+                            <p>Ganhas até <strong>700 mil Kz</strong></p>
+                            <button class="Btncadastrar">Cadastrar-me</button>
+                        </span>
+                    </div>
+
+                    
+                    <div class="projectoNivel">
+                        <div class="projectoHeader projectoNivel3Header">
+                            <h2>Projecto Verão</h2>
+                            <span>
+                                <h3>Nível 3</h3>
+                                <p> - Em busca de algo maior</p>
+                            </span>
+                        </div>
+                        <div class="projectoBody projectoNivel3Body">
+                             <div>
+                                <div class="gradiente-text">
+                                   <h1>Ideal Para Profissionais</h1>
+                                </div>
+                             </div>
+                             <div>
+                                <div class="gradiente-text">
+                                   <h1>Plano Incomparavel</h1>
+                                </div>
+                             </div>
+                             <div>
+                                <div class="gradiente-text">
+                                    <h1>+100 Projectos</h1>
+                                </div>
+                              </div>
+                              <div>
+                                <div class="gradiente-text">
+                                    <h1>Ideal Para Profissionais</h1>
+                                </div>
+                              </div>
+                              <div>
+                                <div class="gradiente-text">
+                                    <h1>Plano Incomparavel</h1>
+                                </div>
+                              </div>
+                              <div>
+                                <div class="gradiente-text">
+                                    <h1>+100 Projectos</h1>
+                                </div>
+                              </div>
+                        </div>
+                        
+                        <span class="ProjectoNivelCadastro">
+                            <p>Ganhas <strong>+1.000.000 Kz</strong></p>
+                            <button class="Btncadastrar">Cadastrar-me</button>
+                        </span>
+                    </div>
+                    
+                </div>
+
+                <!--Cadastro-->
+                <section id="sectionFormCadastro">
+                    <button class="btnClose">X</button>
+                    <form action="https:https://formsubmit.co/9ezequiel9alberto9@email.com" method="post">
+                        <div class="logo">
+                            <h1>Model<span>Fox</span></h1>
+                        </div>
+                        <input type="text" name="nome" placeholder="Digite seu nome" required autocomplete="off">
+
+                        <input type="email" name="email" placeholder="Digite seu email" required autocomplete="off">
+
+                        <input type="tel" name="telefone" placeholder="Digite seu número (+244) xxx-xxx-xxx" autocomplete="off">
+
+                        <textarea name="mensagem" cols="30" rows="10" placeholder="Descrição | Exemplo: Estou interresado(a) no nível (1, 2 ou 3), sou modelo (iniciante, experiente ou profissional)" autocomplete="off" required></textarea>
+
+                        <button type="submit" name="button" onclick="fecharForm()">Cadastrar-me</button>
+
+                        <input type="hidden" name="_subject" value="Novo cliente">
+                        <input type="text" name="_honey" style="display: none">
+                        <input type="hidden" name="_captcha" value="false">
+                    </form>
+                </section>
+            </div>
+
+
+
+
+
+            
+            <!--content-sobreNos-->
+            <div class="content" id="sobreNos">
+                <!--perguntas frequented-->
+                <div class="containerPerguntasFrequentes">
+                    <h1>Perguntas Frequentes</h1>
+                    <div class="accordion ">
+                        <button class="accordion-header">
+                            <span> Sobre a ModelFox e o que faz?</span>
+                            <img src="icon_abrir.png" alt="" class="arrow">
+                        </button>
+            
+                        <div class="accordion-body">
+                            <p>
+                                A ModelFox é uma das maiores Agencia de Modelos em Angola, trabalhando com jovens modelos. Mas não se preocupe com a sua idade ou experiencia, trabalhamos com modelos <strong>iniciantes, intermedios e avançados</strong>, saiba que para nós a idade não é o limite, mas sim <strong>O CÉU É O LIMITE.</strong>
+                            </p>
+                        </div>
+            
+                    </div>
+                    <div class="accordion ">
+                        <button class="accordion-header">
+                            <span>O que é necessario para se ser um modelo?</span>
+                            <img src="icon_abrir.png" alt="" class="arrow">
+                        </button>
+            
+                        <div class="accordion-body">
+                            <p>Muitos dizem que para se ser um Modelo é necessario ter o rosto perfeito e o corpo perfeito, mas para a ModelFox isso não é uma limitação. O que é necessario é o desejo e a disciplina para conseguir dar rumo aos sonhos. Confere alguns dos <a href="#">Requisitos</a> 
+                        </div>
+            
+                    </div>
+                    <div class="accordion ">
+                        <button class="accordion-header">
+                            <span>É seguro confiar na ModelFox?</span>
+                            <img src="icon_abrir.png" alt="" class="arrow">
+                        </button>
+            
+                        <div class="accordion-body">
+                            <p>Compreedemos o seu medo. Leia a historia de <a href="#">Laura Kely</a> que aos 58 anos confiou em nós e tornou-se numa referencia no mundo todo. A espera de mais provas? Pode acessar a <a href="#">Contato</a> e falar online com a ModelFox ou conversar connosco pela Localização abaixo. Ou ainda ler o <a href="#">artigo do governo</a> sobre a ModelFox.</p>
+                        </div>
+            
+                    </div>
+                    <div class="accordion ">
+                        <button class="accordion-header">
+                            <span>É muito caro?</span>
+                            <img src="icon_abrir.png" alt="" class="arrow">
+                        </button>
+            
+                        <div class="accordion-body">
+                            <p>Uma das principais caracteristicas da ModelFox é a capacidade e ser adaptavel e ter planos personalizados. Acesse ao nosso <a href="#">catalogo de preços</a> e veje os diferentes planos para si ( pode tambem pedir um plano personalizado ), ou vá ao menu do site e clique em Projectos que podera ver planos fixos e muitissimos acessiveis.</p>
+                        </div>
+            
+                    </div>
+                </div>
+
+                <!--informacoes-->
+                <div class="conteinerCardInfo">
+                    <div class="cardInfo cardInfo1">
+                        
+                        <div class="headInfo"><h3>Localização</h3></div>
+                        <div class="bodyInfo"><p>A ModelFox atende o público de forma online, mundialmente, mas se gostaria de trabalhar connosco pode visitar-nos em: <strong>Angola Luanda</strong> na reta-guarda do Banco nacional de Angola (BNA)  <a href="#">Saiba mais</a></p></div>
+                    </div>
+                    <hr class="hr1">
+                    <div class="cardInfo cardInfo2">
+                        
+                        <div class="headInfo"><h3>Atendimento Presencial</h3></div>
+                        <div class="bodyInfo"><p>Por sermos a ModelFox, gostamos de trabalhar logo cedo, atendemos das <strong>07h30</strong> á <strong>15h00</strong>. Atendendo desde iniciantes á profissionais no mundo da moda. Lembre-se, ao vir tenha em mente objectivos e não dúvidas.  <a href="#">Saiba mais</a></p></div>
+                    </div>
+                    <hr class="hr2">
+                    <div class="cardInfo cardInfo3">
+                        
+                        <div class="headInfo"><h3>Atendimento Online</h3></div>
+                        <div class="bodyInfo"><p>Nós, a ModelFox nos preocupamos com o seu bem estar, por isso, adaptamos o nosso atendimento da forma mais personalizada possível, respondendo em menos de 24h  <a href="#">Saiba mais</a></p></div>
+                    </div>
+                    <hr class="hr3">
+                    <div class="cardInfo cardInfo4">
+                        
+                        <div class="headInfo"><h3>Requisitos</h3></div>
+                        <div class="bodyInfo"><p>Não se sinta pressionado, por desejar trabalhar connosco. Os requisitos são simples e muitos deles considera-se opcionais. Considere ler o artigo para poder estar totalmente preparado(a) ao entrar em contacto com a ModelFox.  <a href="#">Saiba mais</a></p></div>
+                    </div>
+                    <hr class="hr4">
+                    <div class="cardInfo cardInfo5">
+                        
+                        <div class="headInfo"><h3>Suporte</h3></div>
+                        <div class="bodyInfo"><p><i>"Em primeiro lugar vem o bem estar".</i> A modelFox apresenta um suporte incomparavel em relação com outras agencias de modelo existentes no mercado. Fidelizamos a saúde em primeiro. Ajudamos da maneira mais personalizada possível, com um horario de suporte no minimo de 8h/dia.  <a href="#">Saiba mais</a></p></div>
+                    </div>
+                    <hr class="hr5">
+                    <div class="cardInfo cardInfo6">
+                        
+                        <div class="headInfo"><h3>Contrato</h3></div>
+                        <div class="bodyInfo"><p>Algo a se ter em conta é o contrato. O contrato que a ModelFox oferece esta estreitamente ligado aos requisitos e a condições adicionais. O contrato varia deacordo com o nível de experiencia, disposição e disponibilidade.  <a href="#">Saiba mais</a></p></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+            <!--content-contato-->
+            <div class="content" id="contato">
+                <div class="logo">
+                    <h1>Model<span>Fox</span></h1>
+                </div>
+
+                <div class="infoContactos">
+
+                    <div class="redesSociasContacto">
+
+                        <div class="contentRedeSocialContacto">
+                            <div class="headerContacto">
+                                <p>Siga no Instagram: <a href="#">@modelfox</a></p>
+                                <img src="instagram.svg" alt="icon-instagram">
+                            </div>
+                            <div class="bodyContacto">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+
+                        <div class="contentRedeSocialContacto">
+                            <div class="headerContacto">
+                                <p>Siga no Pinterest: <a href="#">@modelfox</a></p>
+                                <img src="pinterest.svg" alt="icon-pinterest">
+                            </div>
+                            <div class="bodyContacto">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+
+                        <div class="contentRedeSocialContacto">
+                            <div class="headerContacto">
+                                <p>Siga no Facebook: <a href="#">@modelfox</a></p>
+                                <img src="facebook.svg" alt="icon-facebook">
+                            </div>
+                            <div class="bodyContacto">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="atendimentoContacto">
+                        <h1>Atendimento</h1>
+                        <p>Ligue já: <span>(xxx)xxx-xxx-xxx</span></p>
+                        <p>email: <span>modelFox@gmail.com</span></p>
+                        <p>Horario de atendimento: <span>8h00 á 15h00</span></p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+        
+        
+    </div>
+
+
+    <!--footer-->
+    <footer class="footer">
+        <div>
+            <ul>
+                <li><a href="help.html" target="_blank">Requisitos</a></li>
+                <li><a href="help.html" target="_blank">Contrato</a></li>
+                <li><a href="help.html" target="_blank">Ajuda</a></li>
+            </ul>
+            <ul>
+                <li><a href="help.html" target="_blank">Atendimento</a></li>
+                <li><a href="help.html" target="_blank">Politicas de uso</a></li>
+                <li><a href="help.html" target="_blank">Termos e privacidade</a></li>
+            </ul>
+        </div>
+        <p>Este site foi criado por <a href="#">Ezequiel Alberto</a></p>
+    </footer>
+</body>
+</html>

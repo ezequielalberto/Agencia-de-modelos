@@ -1,0 +1,297 @@
+.projectosNiveis{
+    height:auto;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding:50px 0px 20px 0px;
+}
+.projectosNiveis .projectoNivel{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding:10px 0px 30px 0px;
+    overflow: hidden;
+}
+.projectosNiveis .projectoNivel .projectoHeader{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px 10px 20px;
+    font-family: textos;
+}
+.projectosNiveis .projectoNivel .projectoHeader span{
+    display:inline-flex;
+    align-items:baseline;
+    justify-content: start;
+}
+.projectosNiveis .projectoNivel:nth-child(1) .projectoHeader span h3{
+    color:#8d8dff;
+    /*background-color:rgb(111, 111, 255);
+    background-color:#4f4fff;*/
+}
+.projectosNiveis .projectoNivel:nth-child(2) .projectoHeader span h3{
+    color:rgb(111, 111, 255);
+    /*background-color:;
+    background-color:;*/
+}
+.projectosNiveis .projectoNivel:nth-child(3) .projectoHeader span h3{
+    color:#4f4fff;
+    /*background-color:rgb(111, 111, 255);
+    background-color:#4f4fff;*/
+}
+.projectosNiveis .projectoNivel .projectoNivel1Header span p{
+    color: gray;
+    font-size: 14px;
+}
+.projectoNivel .projectoBody{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    padding: 10px 0px;
+}
+.projectoNivel  .projectoNivel1Body{
+    animation: scrollProjectoNivel1 40s linear infinite;
+}
+.projectoNivel  .projectoNivel2Body{
+    justify-content: end;
+    animation: scrollProjectoNivel2 40s linear infinite;
+}
+.projectoNivel  .projectoNivel3Body{
+    animation: scrollProjectoNivel2 40s linear infinite;
+}
+@keyframes scrollProjectoNivel1 {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-350px * 2));
+    }
+}
+@keyframes scrollProjectoNivel2 {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(350px * 2));
+    }
+}
+@keyframes scrollProjectoNivel3 {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-350px * 2));
+    }
+}
+.projectoNivel .projectoBody div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    height: 250px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border-radius: 20px;
+    background-color:  rgba(87, 87, 87, 0.397);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    
+
+}
+.projectoNivel  .projectoNivel1Body  div:nth-child(1) ,
+.projectoNivel  .projectoNivel1Body  div:nth-child(4) {
+    background-image: url(modelo_com_fiolao.jpg);
+}
+.projectoNivel  .projectoNivel1Body  div:nth-child(2) ,
+.projectoNivel  .projectoNivel1Body  div:nth-child(5) {
+    background-image: url(modelo_de_ruiva_de_oculos.jpg);
+    background-position:center top;
+}
+.projectoNivel  .projectoNivel1Body  div:nth-child(3) ,
+.projectoNivel  .projectoNivel1Body  div:nth-child(6) {
+    background-image: url(modelo_com_chapeu_japones_negra_fundo_vermelho.jpg);
+}
+
+
+
+.projectoNivel  .projectoNivel2Body  div{
+    background-position: center top;
+}
+.projectoNivel  .projectoNivel2Body  div:nth-child(1) ,
+.projectoNivel  .projectoNivel2Body  div:nth-child(4) {
+    background-image: url(modelo_chinesa_apoiada_na_parede.jpg);
+}
+.projectoNivel  .projectoNivel2Body  div:nth-child(2) ,
+.projectoNivel  .projectoNivel2Body  div:nth-child(5) {
+    background-image: url(modelo_na_escada_olhando_de_lado.jpg);
+}
+.projectoNivel  .projectoNivel2Body  div:nth-child(3) ,
+.projectoNivel  .projectoNivel2Body  div:nth-child(6) {
+    background-image: url(modelo_preto_e_branco_apoiada_na_parede.jpg);
+}
+
+
+
+.projectoNivel  .projectoNivel3Body  div:nth-child(1) ,
+.projectoNivel  .projectoNivel3Body  div:nth-child(4) {
+    background-image: url(modelo_deitado_na_relva.jpg);
+}
+.projectoNivel  .projectoNivel3Body  div:nth-child(2) ,
+.projectoNivel  .projectoNivel3Body  div:nth-child(5) {
+    background-image: url(modelo_na_parede_com_bolsa.jpg);
+    background-position:center -120px;
+    background-size: 150%;
+}
+.projectoNivel  .projectoNivel3Body  div:nth-child(3) ,
+.projectoNivel  .projectoNivel3Body  div:nth-child(6) {
+    background-image: url(modelo_preto_e_branco_de_chapeu_e_casaco_grnade.jpg);
+    background-position:center top;
+}
+
+
+
+.projectoNivel .projectoNivel1Body div h1{
+    color: #4f4fff;
+    font-family:  textos;
+    background-color:#ff9c788a;
+    padding: 1px;
+    border-right: 2px solid #2f2fb4;
+}
+.projectoNivel .projectoNivel2Body div h1{
+    color:#ff8355;
+    font-family: titulo;
+    background-color:#4f4fff81;
+    padding: 1px;
+    border-right: 2px solid #db5929;
+}
+.projectoNivel .projectoNivel3Body div h1{
+    color:#fff;
+    font-family: frasesCurtas;
+    padding: 1px;
+    
+}
+.projectoNivel .projectoNivel3Body div div.gradiente-text{
+    background-image: linear-gradient(to right, #8d8dff, #db5929);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+/*BtnCadastro*/
+.ProjectoNivelCadastro{
+    display:flex;
+    align-items: baseline;
+    gap: 8px;
+    font-family: textos;
+    padding-left:15px;
+}
+.ProjectoNivelCadastro .Btncadastrar{
+    padding: 8px 14px;
+    color: white;
+    background-color: #4f4fff;
+    border-radius: 25px;
+    border:none;
+    cursor: pointer;
+    transition: background .3s;
+}
+.ProjectoNivelCadastro .Btncadastrar:hover{
+    background-color: #fff;
+    color:#4f4fff;
+}
+.ProjectoNivelCadastro p{
+    color:#db5929;
+}
+
+/*SECTION CADASTRO*/
+#sectionFormCadastro{
+    display: none;
+    
+}
+.CadastroOpen{
+    padding:60px 20px 0px 20px;
+    position:fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    background-color:rgba(0, 0, 0, 0.418);
+}
+#sectionFormCadastro .btnClose{
+    display: none;
+    padding: 15px 20px;
+    align-self: flex-end;
+    color: #fff;
+    background-color: #4f4fff;
+    cursor:pointer;
+    border:none;
+    border-radius:4px;
+}
+#sectionFormCadastro .btnClose:hover{
+    background-color: #2f2fb4;
+}
+#sectionFormCadastro form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:8px;
+    width: 400px;
+    height: 80%;
+    margin: auto;
+    align-self: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+}
+#sectionFormCadastro form input, #sectionFormCadastro form textarea{
+    font-family:textos;
+    border: 2px solid #4343ac8c;
+    border-radius: 5px;
+    padding: 5px;
+}
+#sectionFormCadastro form .logo{
+    text-align: center;
+}
+#sectionFormCadastro form > button{
+    font-family: textos;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4f4fff;
+    color: white;
+}
+@media screen and (max-width:330px){
+    
+    .projectosNiveis .projectoNivel .projectoHeader{
+        padding: 10px 0px 10px 10px;
+    }
+}
+
+@media screen and (max-width:436px){
+    .projectoNivel .projectoBody{
+        padding: 10px;
+    }
+    .projectoNivel .projectoBody div{
+        padding: 10px;
+        width: 80%;
+        height: 200px;
+    }
+    #sectionFormCadastro form{
+        width:90vw;
+    }
+      
+    .projectoNivel  .projectoNivel1Body{
+          animation: scrollProjectoNivel1 25s linear infinite;
+    }
+    .projectoNivel  .projectoNivel2Body{
+          animation: scrollProjectoNivel2 25s linear infinite;
+    }
+    .projectoNivel  .projectoNivel3Body{
+        animation: scrollProjectoNivel3 25s linear infinite;
+    }
+}

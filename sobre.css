@@ -1,0 +1,149 @@
+/*PERGUNTAS FREQUENTES*/
+.containerPerguntasFrequentes{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    gap: 15px;
+    padding:60px 10px 10px 10px;
+}
+.containerPerguntasFrequentes h1{
+    padding: 10px 0px;
+    color:rgb(62, 62, 245);
+    font-family: textos;
+}
+.accordion{
+    width: 80vw;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    font-family: textos;
+}
+.accordion:hover{
+    background-color:rgb(247, 247, 247);
+    transition: 0.3s;
+}
+.accordion-header{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    cursor: pointer;
+}
+.accordion-header span{
+    max-width: 100%;
+    white-space: nowrap;/*para nao quebrar*/
+    overflow: hidden;
+    text-overflow: ellipsis;/*caso o texto seje muito grande vai aparecer tres pontinhos*/
+}
+.accordion-header img{
+    height: 20px;
+    width: 20px;
+}
+.accordion-body{
+    color: #444;
+    font-size: 14px;
+    opacity: 0;
+    height: 0; 
+    overflow: hidden;
+    transition: opacity .3s; 
+}
+.accordion-body.acordionAberto{
+    height: 100%;
+    opacity: 1;
+    padding: 5px 0px;
+}
+.arrow{
+    transition: transform .2s linear;
+}
+.accordion:has(.acordionAberto) .arrow{
+    transform: rotate(180deg);
+}
+
+/*DIVs INFORMACOES*/
+.conteinerCardInfo{
+    display: flex;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 10px;
+    gap: 20px;
+}
+.conteinerCardInfo hr{
+    width: 80vw;
+    margin: 10px 0px;
+}
+.conteinerCardInfo .cardInfo{
+    width: 350px;
+    height: auto;
+    flex-shrink: 0;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border-radius: 12px;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.conteinerCardInfo .cardInfo1{
+    background-image: url(modelo_na_escada_olhando_de_lado.jpg);
+}
+.conteinerCardInfo .cardInfo2{
+    background-image: url(modelo_ruiva_entre_as_plantas.jpg);
+    background-position: center;
+    background-size: 100% 200%;
+}
+.conteinerCardInfo .cardInfo3{
+    background-image: url(modelo_de_partiScorno_sentado_num_monumento.jpg);
+    background-position: center;
+}
+.conteinerCardInfo .cardInfo4{
+    background-image: url(modelo_negra_africana.jpg);
+    background-position: center;
+}
+.conteinerCardInfo .cardInfo5{
+    background-image: url(modelo_surrindo_de_amarelo_e_botas.jpg);
+}
+.conteinerCardInfo .cardInfo6{
+    background-image: url(conversando_sobre_estrategias.jpg);
+}
+
+.conteinerCardInfo .cardInfo .headInfo{
+    padding: 10px;
+    background-color:#826cff8f ;
+    font-family: textos;
+    width: 100%;
+}
+.conteinerCardInfo .cardInfo .bodyInfo{
+    
+    text-align: center;
+    font-family: textos;
+    width: 100%;
+    height: 90%;
+}
+.conteinerCardInfo .cardInfo .bodyInfo p{
+    
+    width: 90%;
+    padding: 10px;
+    margin: 5px auto 0px auto;
+    background-color:#ff9c788a ;
+}
+@media screen and (min-width:770px) and (max-width:1150px){
+    .conteinerCardInfo .hr1, .conteinerCardInfo .hr3, .conteinerCardInfo .hr5{
+        display:none;
+    }
+}
+@media screen and (min-width:1151px){
+    .conteinerCardInfo .hr1, .conteinerCardInfo .hr2, .conteinerCardInfo .hr4, .conteinerCardInfo .hr5{
+        display:none;
+    }
+}

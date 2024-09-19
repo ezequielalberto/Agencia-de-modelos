@@ -1,0 +1,518 @@
+
+/*HEADER*/
+header{
+    width:100%;
+    height:50vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+    background-image: url(fotografa.jpg);
+    background-position:center -450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+header::after{
+    content:' ';
+    position:absolute;
+    top: 0;
+    left: 0;
+    margin-top: 48px;
+    width:100%;
+    height:50vh;
+    background-color:rgba(0, 0, 0, 0.445);
+    z-index: 1;
+}
+header .redesSocias{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 5px;
+    padding: 0px 5px;
+    color: white;
+    z-index: 2;
+}
+header .redesSocias img{
+    height: 20px;
+    width: 20px;
+}
+header .headerContent{
+    color: white;
+    z-index: 3;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.144);
+}
+header .headerContent h1{
+    font-family:frasesCurtas;
+    font-size: 62px;
+    text-align:center;
+    padding: 5px;
+    font-weight: normal;
+}
+header .headerContent p{
+    width: 450px;
+    padding: 5px;
+    font-family: textos;
+    text-align: center;
+    margin:0px auto;
+}
+
+/*SCROLL PHOTOS*/
+.sectionSlidePhotos{
+    padding: 5px 0px;
+}
+.sectionSlidePhotos h1{
+    padding: 15px 15px 15px 25px;
+    font-family: textos;
+    font-size: 28px;
+}
+.containerSlidePhotos{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 360px;
+    width: 90%;
+    padding: 10px;
+    margin:auto;
+    overflow: hidden;
+}
+/*shadow*/
+.containerSlidePhotos::before,
+.containerSlidePhotos::after{
+    
+    content:'';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 1;
+}
+.containerSlidePhotos::before{
+    background: linear-gradient(to right, #cecece, transparent 40%);
+    left: 0;
+    top: 0;
+}
+.containerSlidePhotos::after{
+    background: linear-gradient(to left, #cecece, transparent 40%);
+    top: 0;
+    right: 0;
+}
+/*ANUNCIO*/
+.containerAnuncio{
+    width:100%;
+    height: 100vh;
+    position:fixed;
+    top:0;
+    left:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgba(0, 0, 0, 0.418);
+    z-index: 19;     
+}
+.contentAnuncio{
+    width:300px;
+    height: 55vh;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    background: white;
+    background-image: url(modelo_preto_e_branco_de_chapeu_e_casaco_grnade.jpg);
+    background-position: top center;
+    background-size: cover;
+    border-radius: 10px;
+    z-index: 20;
+}
+.contentAnuncio h1{
+    text-align: center;
+    font-family: textos;
+    color: #4f4fff;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.1);
+    
+}
+.contentAnuncio h4{
+    color:#8d8dff;
+    font-family: textos;
+    margin-top: -10px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.1);
+}
+.contentAnuncio ul{
+    padding: 30px;
+    border-radius: 10px;
+    background:#ff9c788a;
+    width:100%;
+    
+}
+.contentAnuncio ul li{
+    font-family: textos;
+    padding: 5px 0px;
+}
+.contentAnuncio button a{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: black;
+    display: block;
+}
+.contentAnuncio button{
+    width:100%;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    text-align: center;
+    font-family: textos;
+    background-color: #4f4fff;
+}
+.contentAnuncio button.eventClose{
+    background-color: white;
+    border: 2px solid black;
+     
+    cursor: pointer;
+}
+.containerSlidePhotos .contentSlidePhotos{
+    display: flex;
+    width: calc(250px * 18);
+    height:100%;
+    gap:15px;
+    animation: scroll 40s linear infinite;
+}
+.contentSlidePhotos:hover{
+    animation-play-state: paused;
+}
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 12));
+    }
+}
+.slidePhoto{
+    height: 100%;
+    width: 250px ;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-color: rgba(87, 87, 87, 0.397);
+    background-size: cover;
+    background-position: center;
+    box-shadow:0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px 0px 12px 0px;
+    perspective: 100px;
+}
+.slidePhoto:nth-child(1), .slidePhoto:nth-child(10){
+    background-image: url(modelo_surrindo_de_amarelo_e_botas.jpg) ;
+}
+.slidePhoto:nth-child(2), .slidePhoto:nth-child(11){
+    background-image: url(modelo_na_escada_olhando_de_lado.jpg) ;
+}
+.slidePhoto:nth-child(3), .slidePhoto:nth-child(12){
+    background-image: url(modelo_de_ruiva_de_oculos.jpg) ;
+}
+.slidePhoto:nth-child(4), .slidePhoto:nth-child(13){
+    background-image: url(modelo_apoiado_no_corrimao.jpg) ;
+}
+.slidePhoto:nth-child(5), .slidePhoto:nth-child(14){
+    background-image: url(modelo_na_parede_com_bolsa.jpg) ;
+}
+.slidePhoto:nth-child(6), .slidePhoto:nth-child(15){
+    background-image: url(modelo_com_chapeu_japones_negra_fundo_vermelho.jpg) ;
+}
+.slidePhoto:nth-child(7), .slidePhoto:nth-child(16){
+    background-image: url(modelo_sentado_na_relva.jpg) ;
+}
+.slidePhoto:nth-child(8), .slidePhoto:nth-child(17){
+    background-image: url(modelo_com_fiolao.jpg) ;
+}
+.slidePhoto:nth-child(9), .slidePhoto:nth-child(18){
+    background-image: url(modelo_preto_e_branco_de_chapeu_e_casaco_grnade.jpg) ;
+}
+
+
+
+
+
+
+
+/*STAP BY STAP*/
+.stapByStap{
+    width: 100%;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:40px 0px;
+    gap: 20px;
+    
+}
+.stap1, .stap2, .stap3{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    flex-basis: 1;
+    font-family: titulo;
+    align-items: center;
+}
+.stap1 h1, .stap2 h1, .stap3 h1{
+    flex-shrink: 1;
+    flex-basis: 1;
+    font-size: 600%;
+}
+.stap1 p, .stap2 p, .stap3 p{
+    flex-shrink: 1;
+    flex-basis: 1;
+    font-family:textos;
+    text-align: center;
+    background:#cecece;
+    color:#1a1a1a;
+}
+.stap1 h1{
+    color:#8d8dff;
+}
+.stap2 h1{
+    color:rgb(111, 111, 255);
+}
+.stap3 h1{
+    color:rgb(79, 79, 255);
+}
+
+
+/*LEVELS*/
+.levels{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom:10px;
+    
+    
+}
+.levels>div{
+    width: 80%;
+    height: 250px;
+    border-radius: 0px 18px 0px 18px ;
+    background-repeat: no-repeat;
+    background-size:100%;
+    overflow:hidden;
+    box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.274);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.levels>div p{
+    transition:color 0.3s ease;
+}
+.levels div .levelShadow{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    background-image:linear-gradient(to top, #4f4fff, transparent);
+    transition:background-image 0.3s ease;
+}
+.levels div .levelBlur{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(7px);
+    transition:backdrop-filter 0.3s ease;
+}
+.levels .level1{
+    background-image: url(modelo_com_fiolao.jpg);
+    background-position: center -420px;
+    color:#8d8dff;
+    background-color:#8d8dff;
+}
+.levels .level2{
+    background-image: url(modelo_chinesa_apoiada_na_parede.jpg);
+    background-position: center -320px;
+    color:rgb(111, 111, 255);
+    background-color:rgb(111, 111, 255);
+}
+.levels .level3{
+    background-image: url(modelo_deitado_na_relva.jpg);
+    background-position: center;
+    color:#4f4fff;
+    background-color:#4f4fff;
+}
+.levels .level1 h1{
+    font-family: titulo;
+    font-size: 48px;
+    transition:color 0.3s ease;
+}
+.levels .level2 h1{
+    font-family: titulo;
+    font-size: 48px;
+    transition:0.3s ease;
+}
+.levels .level3 h1{
+    font-family: titulo;
+    font-size: 48px;
+    transition:0.3s ease;
+}
+.levels>div:hover{
+    transform: scale3d(1.04, 1.04, 1);
+}
+.levels>div:hover .levelBlur{
+    backdrop-filter: blur(0px);
+}
+.levels>div:hover .levelBlur .levelShadow{
+    background-image:linear-gradient(to top, #6565ffb6, transparent);
+}
+.levels>div:hover p, .levels>div:hover h1{
+    color: #babaff;
+}
+
+
+/*SECTION ARGUMENT*/
+.containerArgument{
+    height: 415px;
+    padding: 50px 0px;
+    margin: auto;
+    overflow: hidden;
+}
+.containerArgument .scrollArgument{
+    width:  calc(350px * 8);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap:85px;
+    animation: ArgumentscrollAnimate 90s linear infinite;
+}
+.containerArgument .scrollArgument:hover{
+    animation-play-state: paused;
+}
+@keyframes ArgumentscrollAnimate {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-350px * 4));
+    }
+}
+.scrollArgument .CardArgument{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    height: 100%;
+    width: 350px;
+    gap:25px;
+    padding: 5px;
+    border-radius: 12px;
+    background-image: linear-gradient(to top, #6666ff9c, transparent 25%) ;
+    font-family:textos;
+}
+.CardArgument .containerPerfil{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 15px; 
+    padding:5px;
+    border-left: 2px dashed #6666ffa4;
+    border-bottom: 2px dashed #6666ffa4;
+    border-radius: 0 0 0 12px;
+}
+.containerPerfil .containerFotoArgument div{
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    background-size: cover;
+    background-color: center;
+    margin: 3px;
+}
+.CardArgument:nth-child(1) .containerPerfil .containerFotoArgument div,
+.CardArgument:nth-child(5) .containerPerfil .containerFotoArgument div{
+    background-image: url(modelo_negra_africana.jpg);
+}
+.CardArgument:nth-child(2) .containerPerfil .containerFotoArgument div,
+.CardArgument:nth-child(6) .containerPerfil .containerFotoArgument div{
+    background-image: url(modelo_com_chapeu_japones_negra_fundo_vermelho.jpg);
+}
+.CardArgument:nth-child(3) .containerPerfil .containerFotoArgument div,
+.CardArgument:nth-child(7) .containerPerfil .containerFotoArgument div{
+    background-image: url(modelo_preto_e_branco_com_a_mao_na_cintura.jpg);
+}
+.CardArgument:nth-child(4) .containerPerfil .containerFotoArgument div,
+.CardArgument:nth-child(8) .containerPerfil .containerFotoArgument div{
+    background-image: url(modelo_preto_e_branco_de_chapeu_e_casaco_grnade.jpg);
+}
+.containerPerfil .containerNameArgument{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.containerNameArgument h3{
+    color:#4f4fff;
+}
+.containerNameArgument p{
+    color: #444444;
+}
+.CardArgument .contentArgument{
+    height: 85%;
+    padding: 0px 10px 3px 5px;
+    text-align: center;
+    color:#444444;
+}
+
+
+
+@media screen and (max-width: 628px) {
+    header{
+        background-position:center -120px ;
+        background-size:620px;
+    }
+    header .headerContent h1{
+        font-size:xx-large;
+    }
+    header .headerContent p{
+        width: 80vw;
+    }
+    .stapByStap{
+        flex-direction:column;
+        gap:15px;
+    }
+    .levels .level1, .levels .level2{
+        background-position: center -20px;
+    }
+}
+@media screen and (min-width: 629px) and (max-width: 768px){
+    header{
+        background-position:center -190px;
+    }
+    .stapByStap{
+        gap:35px;
+        padding-inline:20px;
+    }
+    .stap1 h1, .stap2 h1, .stap3 h1{
+        font-size: 600%;
+    }
+    .levels .level1, .levels .level2{
+        background-position: center -80px;
+    }
+    
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    header{
+        background-position: center -300px;
+    }
+    .levels .level1, .levels .level2{
+        background-position: center -220px;
+    }
+}
+@media screen and (max-width:375px) {
+    .scrollArgument .CardArgument{
+        width: 80vw;
+    }
+   footer{
+    padding:10px;
+   }
+   footer p{
+    padding: 0;
+   }
+}

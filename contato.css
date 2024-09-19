@@ -1,0 +1,76 @@
+
+#contato .logo{
+    margin: 45px auto 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+}
+.infoContactos{
+    padding-bottom: 20px;
+}
+.redesSociasContacto{
+    display:flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-bottom: 40px;
+}
+.headerContacto{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin:0 auto;
+    background-image: linear-gradient(to left, #826cff, #ff9c78);
+}
+.headerContacto img{
+    width: 25px;
+    height: 25px;
+}
+.headerContacto p{
+    font-family: textos;
+}
+.bodyContacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 12px;
+}
+.bodyContacto div{
+    width: 250px;
+    height: 350px;
+    border-radius: 25px;
+    background-color: rgba(80, 80, 80, 0.61);
+    background-image: url(redeSocialInstagram.jpg);
+    background-position:top center;
+    background-size: cover;
+}
+
+.atendimentoContacto{
+    width: 80vw;
+    margin: auto;
+    background-color: rgb(117, 165, 255);
+    font-family: textos;
+    padding: 20px;
+    border-radius: 12px;
+
+    
+}
+.atendimentoContacto h1{
+    text-align: center;
+    font-family: textos;
+    padding-bottom: 10px;
+}
+.atendimentoContacto p{
+    padding-bottom: 10px;
+}
+.atendimentoContacto p span{
+    font-weight: bold;
+}
+@media screen and (max-width:800px){
+    .bodyContacto div:not(:first-child){
+        display: none;
+    }
+}
